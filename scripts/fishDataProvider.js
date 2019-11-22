@@ -25,7 +25,7 @@ const fishCollection = [
         name: "Bubbles",
         food: ["coral", "plankton"],
         location: "Djibouti",
-        length: 1020,
+        length: 1420,
         species: "Humpback Whale",
         image: "https://static.independent.co.uk/s3fs-public/thumbnails/image/2019/10/03/13/istock-958303054.jpg?w968h681"
     },
@@ -55,3 +55,10 @@ const fishCollection = [
         image: "https://www.captain-planet.net/uploads/2018/10/d0a4004f21e7a47d7bf18d257bce1ff6_800_420.jpg"
     }
 ]
+
+export const useFish = () => {
+    return fishCollection
+}
+
+//immutability: our core, raw data should be private and hidden and should not be changed by other modules
+//this is why we are exporting this FUNCTION (useFish) instead of just the array
